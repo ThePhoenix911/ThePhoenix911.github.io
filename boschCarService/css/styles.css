@@ -11,14 +11,17 @@
 
 
 /* CSS RESET */
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video, section {
+/* body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video, section {
     margin: 0;
     padding: 0;
     border: 0;
-}
+} */
 
 /* UNIVERSAL STYLE */
 *{
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -100,7 +103,7 @@ input {
 header {
     top: 0;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 80px;
@@ -314,7 +317,6 @@ div#caption {
     text-align: left;
 }
 
-
 h2.underline {
     position: relative;
     display: inline-block;
@@ -329,6 +331,18 @@ h2.underline {
     background: deepskyblue;
     left: calc(50% - 45%);
     bottom: -6px;
+}
+
+h2.underline.why-heading:after {
+    left: calc(50% - -29%);
+    bottom: -0.3em;
+    width: 24px;
+}
+
+.why-header {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
 }
 
 #why-us span.tick {
@@ -441,6 +455,11 @@ section h2.underline {
     padding: 1em 0;
     width: 100%;
     position: relative;
+}
+
+#why-us h2.underline {
+    padding: 1em 0;
+    margin: 0.1em 0 0.7em;
 }
 
 #why-us h2.underline::after {
@@ -817,14 +836,14 @@ span.ratings {
     clear: both;
 }
 
-h2#c-review-header {
+/* h2#c-review-header {
     width: 100%;
 }
 
 h2#c-review-header:after {
     left: calc(50% - 27px);
     width: 2em;
-}
+} */
 
 .slideshow {
     display: block;
@@ -832,14 +851,17 @@ h2#c-review-header:after {
     padding: 1em 1em 1.5em;
 }
 
-.slideshow h2.underline {
-    width: 100%;
+.custHeader h2.underline:after {
+    left: calc(50% - 1em);
+    width: 24px;
 }
 
-.slideshow h2.underline:after {
-    left: calc(50% - 1em);
-    width: 44px;
+.custHeader {
+    width: 100%;
+    text-align: center;
+    background: whitesmoke;
 }
+
 
 .slide {
     display:none
@@ -857,10 +879,10 @@ h2#c-review-header:after {
 
 .right {
     position: absolute;
-    right: 0.35em;
+    right: -0.1em;
     font-size: 3em;
     color: #fff;
-    top: -9em;
+    top: -10em;
     text-shadow: -3px 0 black;
 }
 
@@ -871,9 +893,9 @@ h2#c-review-header:after {
 
 .left {
     position: absolute;
-    left: 0.3em;
+    left: -0.1em;
     font-size: 3em;
-    top: -9em;
+    top: -10em;
     color: #fff;
     text-shadow: 3px 0 black;
 }
@@ -1117,9 +1139,7 @@ main#product-container {
 }
 
 .grid-2-col .container div#cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .card .card-content {
@@ -1140,8 +1160,8 @@ main#product-container {
     border-radius: 15px;
     position: relative;
     height: fit-content;
-    width: 40%;
-    margin: 2em auto;
+    width: 70%;
+    margin: 4em auto;
 }
 
 .card:hover {
@@ -1166,7 +1186,7 @@ main#product-container {
 .card p {
     padding: 17px 17px 0;
     letter-spacing: 0.0em;
-    line-height: 26px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -1304,7 +1324,7 @@ div#more-services-link {
 }
 
 h2#service-list-h {
-    width: 100vw;
+    width: 100%;
     clear: both;
 }
 
@@ -1684,6 +1704,22 @@ footer .social img {
         font-size: 0.8em;
         padding: 4em;
         width: min-content;
+    }
+
+    /* SERVICES - product.html */
+    .grid-2-col .container div#cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    .card p {
+        line-height: 26px;
     }
 }
 
