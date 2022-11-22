@@ -6,27 +6,27 @@
 */
 
 // Set we page width equal to screen's
-let w = window.innerWidth;
-let h = window.innerHeight;
+// let w = window.innerWidth;
+// let h = window.innerHeight;
 
-console.log("Kenny G");
-console.log(w);
+// console.log("Kenny G");
+// console.log(w);
 
-let html = document.querySelector("html");
+// let html = document.querySelector("html");
 
-html.style.width = html.scrollWidth + "px";
-html.style.height = html.scrollHeight + "px";
-console.log(html);
+// html.style.width = html.scrollWidth + "px";
+// html.style.height = html.scrollHeight + "px";
+// console.log(html);
 
-console.log(html.style.width);
-
-
+// console.log(html.style.width);
 
 
 
-// Customer reviews slideshow
-function custSlideshow() {
-    // Customer reviews slideshow
+
+
+
+// HAMBURGER ICON AND NAV MENU
+if(document.getElementsByClassName("hamburger-icon") !== null) {
     const menuIcon = document.querySelector(".hamburger-icon");
     const navMenu = document.querySelector(".nav-menu");
 
@@ -37,19 +37,16 @@ function custSlideshow() {
     });
 
     document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", ()=> {
-        console.log("clicked");
         menuIcon.classList.remove("active");
         navMenu.classList.remove("active");
     }));
-    
-
-    // Test
-
-    
 }
 
 
-var slideIndex = 1;
+
+// CUSTOMER REVIEWS SLIDESHOW
+if(document.getElementById("checkCust") !== null) {
+    var slideIndex = 1;
     showDivs(slideIndex);
 
     function plusDivs(n) {
@@ -75,3 +72,4 @@ var slideIndex = 1;
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " fill";
     }
+}
