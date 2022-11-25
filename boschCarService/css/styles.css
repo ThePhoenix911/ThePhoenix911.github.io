@@ -405,6 +405,7 @@ p#entice-text {
     text-decoration: overline;
     text-transform: capitalize;
     padding: 27px;
+    line-height: 1.5em;
 }
 
 .entry-content ul {
@@ -1745,6 +1746,12 @@ footer .social img {
         margin-top: 2.5em;
         padding: 2em;
     } */
+
+
+    /*** ABOUT.HTML ***/
+    #intro-abt {
+        max-height: max-content;
+    }
 
     /*** FORM.HTML ***/
     fieldset {
