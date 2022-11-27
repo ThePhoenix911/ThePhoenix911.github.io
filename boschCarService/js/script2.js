@@ -45,8 +45,11 @@ if(document.getElementsByClassName("hamburger-icon") !== null) {
 
 
 // CUSTOMER REVIEWS SLIDESHOW
-if(document.getElementById("checkCust") !== null) {
-    var slideIndex = 1;
+// if(document.getElementById("checkCust") !== null) {
+    
+// }
+
+var slideIndex = 1;
     showDivs(slideIndex);
 
     function plusDivs(n) {
@@ -72,4 +75,3 @@ if(document.getElementById("checkCust") !== null) {
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " fill";
     }
-}
