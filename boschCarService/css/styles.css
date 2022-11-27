@@ -955,7 +955,7 @@ main {
     background-color: aliceblue;
     margin-top: 23px;
     padding: 10px;
-    max-height: 41.2em;
+    max-height: max-content;
     background-image: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.36)), url("../images/wsh-scaled.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1845,6 +1845,12 @@ footer .social img {
         flex-direction: column;
         flex-shrink: inherit;
         flex-wrap: wrap;
+    }
+
+
+    /*** ABOUT.HTML ***/
+    #intro-abt {
+        max-height: 41.2em;
     }
     
 }
