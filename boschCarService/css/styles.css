@@ -779,11 +779,12 @@ table#open-h th:nth-child(odd), table#open-h td:nth-child(odd) {
 }
 
 .c_review {
-    padding: 17px;
+    padding: 2em;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    width: 16em;
+    width: 69%;
     margin: 1em auto;
     font-size: 0.8em;
+    max-width: 310px;
 }
 
 
@@ -1793,7 +1794,7 @@ footer .social img {
 
     /* HERO IMAGE */   
     div#hero-image {
-        height: 41%;
+        height: 57%;
     }
 
     div#hero-content {
@@ -2230,7 +2231,8 @@ footer .social img {
 
     /* HERO IMAGE */
     div#hero-image {
-        height: 55%;
+        height: 69vh;
+        padding: 9em;
     }
 
 
@@ -2420,6 +2422,7 @@ footer .social img {
         width: 1920px;
         margin: 0 auto;
     }
+
 }
 
 
